@@ -6,6 +6,7 @@ int main(void)
     float x, y;
 
     scanf ("%d%d%f%f", &i, &j, &x, &y);
-
+    printf("%d %d %f %f", i, j, x, y);
+    
     return 0;
 }
