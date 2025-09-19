@@ -1,3 +1,5 @@
+// for = Repeat. (int i = 0) => to start at 0, and for everytime i<5, it loops, then i increases by 1 due to i++
+// (int j = 0) => starts from 0, and loops whenever j<and=i, it loops printing * and then increases j by 1.
 #include <stdio.h>
 
 int main(void)
