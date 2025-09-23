@@ -1,3 +1,6 @@
+// First usage of #define ____... on how to make a constant value in the beginning of the code
+// when you don't have to type our the numbers or value one by one.
+
 #include <stdio.h>
 #define INCHES_PER_POUND 166
 #define RECIPROCAL_OF_PI (1.0f / 3.14159f)

@@ -1,3 +1,6 @@
+// This code is basic beginning of how to assign variables and giving them the right type and using
+// multiplicative on the variables and see what you get as the result.
+
 #include <stdio.h>
 
 int main(void)
