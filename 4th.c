@@ -1,3 +1,6 @@
+// how to assign variables value easily then typing it down one by one.
+// for example, i += 2 means i = i + 2
+
 #include <stdio.h>
 
 int main(void)
