@@ -1,3 +1,8 @@
+/*
+* This code is to define when using different *types*, we use different *placeholder*.
+* In this case, int = integer as %d, float as %f.
+*/
+
 #include <stdio.h>
 
 int main(void)
