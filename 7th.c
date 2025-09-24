@@ -1,3 +1,10 @@
+/*
+* when it comes to printf, the numbers between the placeholder becomes how many spaces before or after
+* the number. 
+* The main take away from this code is to tell the difference between the usage in PRINTF and SCANF
+* SCANF = controls numbers of digits. // PRINTF = controls the width (spacing) of the code
+*/
+
 #include <stdio.h>
 
 int main(void)
