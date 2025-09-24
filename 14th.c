@@ -1,3 +1,8 @@
+/*
+* This code is to understand what is the difference between / (dividing) and % (remaining)
+* 
+*/
+
 #include <stdio.h>
 
 int main(void)
