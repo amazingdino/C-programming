@@ -1,3 +1,7 @@
+// basic introduction on how to use scanf + how placing a number infront of the placeholder (%d) would
+// print the numbers 
+// eg) %1,2,3,4d = going up from ones, tens, hundreds, and more.
+
 #include <stdio.h>
 
 int main(void)
