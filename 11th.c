@@ -1,7 +1,7 @@
 /*
-* 
-*
-*
+* This code is the usage of putting %1d in scanf to put a space in each numbers so you could input numbers by putting space
+* You might not understand what this code is for: It's for checking the digit from barcode
+* So, you can just look at the scanf and usage of equations to get the numbers
 */
 
 #include <stdio.h>
