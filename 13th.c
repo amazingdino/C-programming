@@ -1,3 +1,9 @@
+/*
+* All the C Operators in orders.
+* You might wonder why I started from b += c++, but no matter what you do, it will end up adding b from the total sum
+* Postfix > Prefix > Unary > Multiplicative > Additive
+*/
+
 #include <stdio.h>
 
 int main(void)
@@ -10,13 +16,6 @@ int main(void)
     e = 2;
     f = 2;
 
-    /*a = b += c++ - d + --e / -f;*/
-    /* order goes
-    --e
-    -f
-    +
-    -
-    */
     // printf ("%d\n", b += c++);
     // printf("%d\n", b); // b = 4 -> 7
     // printf ("%d\n", c); // c = 3 -> 4
