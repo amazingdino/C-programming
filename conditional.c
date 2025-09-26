@@ -1,4 +1,7 @@
-//
+/*
+* This is to learn what is condition for this code
+* ? means when the condition is true, : means when the condition is false.
+*/
 
 #include <stdio.h>
 
