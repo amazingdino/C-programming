@@ -6,10 +6,10 @@ int main (void)
 
     l = 9;
 
-    i=0;
+    i=0; // makes the empty pyramid 0 to 5
     while (i <= 5)
     {
-        j=0;
+        j=0; // makes the 
         while (j <= i)
         {
             printf (" ");
