@@ -1,6 +1,7 @@
 /*
-* 
-* 
+* This is how to build an inverse pyramid by using for statement.
+* the i variable makes an empty normal pyramid 
+* the j variable makes next line 
 */
 
 #include <stdio.h>
@@ -32,4 +33,3 @@ int main(void)
 
     return 0;
 }
-// why there are so many 
