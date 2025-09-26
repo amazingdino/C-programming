@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     "/Users/tonyahn/Desktop/프로그래밍/C-programming/inverse_pyramid"
+binary-path:     "/Users/tonyahn/Desktop/프로그래밍/C-programming/Inverse_pyramid"
 relocations:     []
 ...
