@@ -1,3 +1,9 @@
+/*
+* This is more detailed code comparing with 16th.c.
+* When there are three values you want to compare, and which one has the biggest number
+* We input that value into max so it would output the variable with the biggest number and state is max.
+*/
+
 #include <stdio.h>
 
 int main(void)
