@@ -11,13 +11,15 @@ int main(void)
 {
     int grade;
 
+
     scanf("%d", &grade);
+    printf ("%d", grade);
 
     switch (grade)
     {
         case 4: printf("Excellent");
                 break;
-        case 3: case 2: printf("Good");
+        case 'A': case 'a': printf("Good");
                 break;
   /*     case 2: printf("Average");
                 break;
