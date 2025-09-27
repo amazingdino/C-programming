@@ -17,10 +17,11 @@ int main(void)
     {
         case 4: printf("Excellent");
                 break;
-        case 3: printf("Good");
+        case 3: case 2: printf("Good");
                 break;
-        case 2: printf("Average");
+  /*     case 2: printf("Average");
                 break;
+                */
         case 1: printf("Poor");
                 break;
         case 0: printf("Failing");
