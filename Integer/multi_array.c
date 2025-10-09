@@ -1,20 +1,18 @@
 /*
 * getting a random number of poker cards
-*
-*
 */
 
 #include <stdbool.h> /* had an error not using this directives, thought it was only for C99*/
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <time.h> /* to use the srand and time function to get a randomizer*/
 
 #define NUM_SUITS 4
 #define NUM_RANKS 13
 
 int main(void)
 {
-    bool in_hand [NUM_SUITS][NUM_RANKS] = {false}; // 4 x 13
+    bool in_hand [NUM_SUITS][NUM_RANKS] = {false}; // 4 x 13 set the first value 0, then others are automated to 0
     int num_cards, rank, suit;
     const char rank_code[] = {'2','3','4','5','6','7','8','9','t','j','q','k','a'};
     const char suit_code[] = {'c','d','h','s'}; // const = constant => the value stay constant (like define)
@@ -29,7 +27,7 @@ int main(void)
     {
         suit = rand() % NUM_SUITS; /*picks a random suit*/
         rank = rand() % NUM_RANKS; /*picks a random rank*/
-        if (!in_hand[suit][rank]) // in_hand[suit]
+        if (!in_hand[suit][rank]) // ! => reverse(false), but when its false * false => true then if statement executes, or else no
         {
             in_hand[suit][rank] = true;
             num_cards--;
