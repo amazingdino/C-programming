@@ -14,12 +14,12 @@
 
 int main(void)
 {
-    bool in_hand [NUM_SUITS][NUM_RANKS] = {false};
+    bool in_hand [NUM_SUITS][NUM_RANKS] = {false}; // 4 x 13
     int num_cards, rank, suit;
     const char rank_code[] = {'2','3','4','5','6','7','8','9','t','j','q','k','a'};
-    const char suit_code[] = {'c','d','h','s'};
+    const char suit_code[] = {'c','d','h','s'}; // const = constant => the value stay constant (like define)
 
-    srand((unsigned) time(NULL));
+    srand((unsigned) time(NULL)); // random seed (getting randomized number for (time) so we can get random numbers)
 
     printf ("Enter number of cards in hand: ");
     scanf ("%d", &num_cards);
@@ -29,7 +29,7 @@ int main(void)
     {
         suit = rand() % NUM_SUITS; /*picks a random suit*/
         rank = rand() % NUM_RANKS; /*picks a random rank*/
-        if (!in_hand[suit][rank])
+        if (!in_hand[suit][rank]) // in_hand[suit]
         {
             in_hand[suit][rank] = true;
             num_cards--;

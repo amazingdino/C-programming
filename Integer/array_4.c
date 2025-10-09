@@ -5,13 +5,13 @@
 * And shows a table of bank interest (inflating interest rate by 1 every year)
 */
 #include <stdio.h>
-#define NUM_RATES ((int) (sizeof(value) / sizeof(value[0])))
+#define NUM_RATES ((int) (sizeof(value) / sizeof(value[0]))) // 40 / 8 = 5 num of rates means to print 5 numbers of rates
 #define INITIAL_BALANCE 100.00
 
 int main (void)
 {
     int i, low_rate, num_years, year;
-    double value[5];
+    double value[5]; // array length 5 => 0,1,2,3,4 (each box's type is double)
 
     printf ("Enter interest rate: "); // get your interest rate
     scanf ("%d", &low_rate);

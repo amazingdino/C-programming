@@ -5,7 +5,8 @@
 
 int main(void)
 {
-    bool digit_seen[10] = {false}; // all [10] are assigned as false [0~9]
+    bool digit_seen[10] = {false}; // only the first index which is digit_seen[0] is 0 since false is 0
+    // if it's true, only the first index is 1 and rest of 
     int digit;
     long n;
 
