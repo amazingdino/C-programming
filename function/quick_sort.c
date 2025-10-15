@@ -38,22 +38,23 @@ void quicksort (int a[], int low, int high)
 
 int split (int a[], int low, int high)
 {
-    int part_element = a[low];
+    int part_element = a[low]; // 5
 
     for(;;)
-    {
-        while (low < high && part_element <= a[high])
-            high--;
-        if(low >= high) break;
-        a[low++] = a[high];
+    { // low = 2, high = 4, part_elemnt 5
+        while (low < high && part_element <= a[high]) // (2 < 4 && 5 <= 9)
+            high--; // 4 - 1 =3;
+        if(low >= high) break; // (2 >= 3) = X;
+        a[low++] = a[high]; // a[2] => a[3] => 4;
+// low = 3, high = 3 low =1, high =8 => 
+        while (low < high && a[low] <= part_element) // (3 < 3 = X)
+            low++; //
+        if (low >= high) break; // (3 >= 3) break O;
+        a[high--] = a[low]; // a[5] = a[2] => 8
+    } //
 
-        while (low < high && a[low] <= part_element)
-            low++;
-        if (low >= high) break;
-        a[high--] = a[low];
-    }
-
-    a[high] = part_element;
+    a[high] = part_element; // a[3] = 5 => WRONG since it has to be a[4] not a[3]. do the calculation again
+    // 
 
     return high;
 }
