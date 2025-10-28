@@ -16,9 +16,9 @@ int main()
         {
             arr[top][i] = num++; // top is 0 where index is 0 and i increases where you have to print
         }
-        top++; //adding 1 value so we could use the value of top later on
+        top++; //adding 1 value so we could use the value of top later on (comes back become 2)
 
-        for(i=top; i<= bottom; i++) // now from (0,2) to bottom (2,2) which is top to bottom
+        for(i=top; i<= bottom; i++) // now from (0,2) to bottom (2,2) which is top to bottom (now it can't execute)
         {
             arr[i][right] = num++; // since 2 is constant and we are printing on the 2 coloumn, we use [right]
         }
