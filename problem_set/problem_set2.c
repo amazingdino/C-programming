@@ -4,8 +4,8 @@ void reverse_string(char str[])
 {
     if (str == '\0')
         return;
-    else // HELLO = > H E L L O \0 
-        return reverse_string(str == ); // O L L E H
+    else // HELLO = > H E L L O \0  HELLO O OL OLL
+        reverse_string (str + 1); // O L L E H => 
         printf ("%s", str);
 }
 
