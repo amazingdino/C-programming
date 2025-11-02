@@ -4,6 +4,7 @@ int array_length (int arr[], int n)
 {
     if (arr[0] == -1) 
     {
+
         return n;
     }
     else
