@@ -38,7 +38,7 @@ void quicksort (int a[], int low, int high)
 
 int split (int a[], int low, int high)
 {
-    int part_element = a[low]; // 5
+    int part_element = a[low]; // 2
 
     for(;;)
     { // low = 2, high = 4, part_elemnt 5

@@ -1,23 +1,23 @@
-#include <stdio.h>
-#include <stdbool.h>
+#include <stdio.h> //directives
+#include <stdbool.h> // uses boolean (will be using true or false)
 #include <stdlib.h>
 
-#define NUM_RANKS 13
+#define NUM_RANKS 13 //MACROs
 #define NUM_SUITS 4
 #define NUM_CARDS 5
 
-int num_in_rank[NUM_RANKS];
+int num_in_rank[NUM_RANKS]; // External variables(global)
 int num_in_suit[NUM_SUITS];
 bool straight, flush, four, three;
 int pairs; // can be 0, 1 or 2
 
-void read_cards(void);
+void read_cards(void); // function declaration
 void analyze_hand(void);
 void print_result(void);
 
 int main(void)
 {
-    for(;;)
+    for(;;) // no conditions
     {
         read_cards();
         analyze_hand();
@@ -29,11 +29,11 @@ void read_cards(void)
 {
     bool card_exits[NUM_RANKS][NUM_SUITS];
     char ch, rank_ch, suit_ch;
-    int rank, suit;
+    int rank, suit; // we could look at these as i and j; [i][j]
     bool bad_card;
     int cards_read = 0;
 
-    for(rank = 0; rank < NUM_RANKS; rank++)
+    for(rank = 0; rank < NUM_RANKS; rank++) // arr[0] -> arr[12] == 0
     {
         num_in_rank[rank] = 0;
         for(suit = 0; suit < NUM_SUITS; suit++)
@@ -83,9 +83,9 @@ void read_cards(void)
             default:            bad_card = true;
         }
 
-        while((ch = getchar()) != '\n')
+        while((ch = getchar()) != '\n') //when pressing enter
         {
-            if(ch != ' ') bad_card = true;
+            if(ch != ' ') bad_card = true; 
         }
 
         if (bad_card)
@@ -110,7 +110,7 @@ void analyze_hand(void)
 {
     int num_consec = 0;
     int rank, suit;
-    straight = false;
+    straight = false; //initializing as false
     flush = false;
     four = false;
     three = false;
@@ -124,7 +124,7 @@ void analyze_hand(void)
         }
     }
     rank = 0;
-    while (num_in_rank[rank] == 0)
+    while (num_in_rank[rank] == 0) // num_in_rank[0] == 0 true then increase rank++
     {
         rank++;
     }
