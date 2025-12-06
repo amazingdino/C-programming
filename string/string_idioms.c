@@ -8,10 +8,9 @@ size_t strlen(const char *s);
 int main(void)
 {
     int a = 0;
-    const char str[100] = "abc";
-    const char *p = &str;
+    const char *str = "abc";
 
-    a = strlen(p);
+    a = strlen(str);
 
     printf("Total number of string is %d", a);
 
@@ -19,13 +18,15 @@ int main(void)
 
 }
 
-size_t strlen(const char *s)
+size_t strlen(const char *s) // '\0'
 // keeps on track of how many characters have been seen so far
 {
     const char *p = s;
-    while (*s)
+    printf("%p\n", s);
+    while (*s) 
     {
         s++;
+        printf("%p\n", s);
     }
     return s - p;
 }

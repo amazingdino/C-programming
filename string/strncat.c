@@ -10,6 +10,5 @@ int main()
     // terminates code at null, but strlen subtracts 1 so there are no space for null
     printf("%s %s", str1, str2);
 
-
     return 0;
 }
