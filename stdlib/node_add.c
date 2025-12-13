@@ -74,28 +74,26 @@ int main(void)
     new_node = malloc(sizeof(node));
     new_node->value = 30;
     new_node->next = first;
-    first = new_node; // 30->20->(0)->10
-    // first->next = 20;
+    first = new_node; // 30->20->10
 
-    node *first_next;
-    first_next = first->next;
-    // first_next->next = 10;
+    node *twenty;// 20
+    new_node = malloc(sizeof(node));
+    new_node->value = 0;
+    new_node->next = twenty->next; // 0->10
+    twenty->next = new_node; // 20->0->10
 
+    //30->20->0->10
     node *zero;
     new_node = malloc(sizeof(node));
     new_node->value = 0;
-    first_next->next = new_node; // 30->20->0 ->(10?)
-
-    node *ten;
-    new_node = malloc(sizeof(node));
-    new_node->value = 10;
-    zero->next = new_node; //30->20->0->10
-
-    node *curr = first; //
-	while(curr!=NULL)
+    new_node->next = first->next; // 0->20
+    first->next = new_node; // 30->0->20->0->10
+     
+    node *q = first; //
+	while(q!=NULL)
 	{
-		printf("Node: %d\n",curr->value);
-		curr = curr->next;
+		printf("Node: %d\n",q->value);
+		q = q->next;
 	}
     
 
