@@ -2,14 +2,18 @@
 // Each word should be stored exactly as its own size
 // (use malloc here)
 // then print the longest word
+// so this concept is to use string.h  since its whole thing could be done with string.h
+// for example measuring the length of the size of the word could be strlen and strcpy to paste the str(words)
+// into words[i] to clarify for longest to see which one has the longest word.
+// two around 2days to figure out errors and shortcuts
 #include <stdio.h>
 #include <stdlib.h> //malloc used
-#include <string.h> // we are usin strlen and strcpy so we need
+#include <string.h> // we are usin strlen and strcpy so we need string header file
 
 int main()
 {
     char str[100];
-    int i, M, longest;
+    int i, M, longest = 0;
 
     char **words = (char **)malloc(sizeof(char *) * M); //make space for characters to be stored
     if (!words)

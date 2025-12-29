@@ -4,6 +4,7 @@
 // (use malloc here!)
 // output should be Maximum value and Avg
 // so find max value + average
+// 8:30 -> 10:17 (but actually took around 30min because I was just brainstorming)
 #include <stdio.h>
 #include <stdlib.h>
 
